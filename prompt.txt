@@ -1,0 +1,2 @@
+Generate a script for a short, 50 second pop science video. Only write the parts spoken out loud. Seperate every sentence with a new line. The script should start with the words "Have you ever wondered [...]?"
+Do not add any descriptors to the script, no title, no roles. Make sure all text within your response is to be spoken out loud.

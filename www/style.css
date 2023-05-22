@@ -1,0 +1,221 @@
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #222;
+    color: white;
+    font-family: 'Instrument Sans', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 10vh;
+    box-sizing: border-box;
+    border-bottom: 2px solid #000;
+    box-shadow: 0px 4px 5px #151515;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.header>button {
+    background: #333;
+    padding: 10px;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.header>button:hover {
+    background: #444;
+    cursor: pointer;
+}
+
+.header>button:active {
+    background: #555;
+}
+
+.name-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-container>* {
+    margin-left: 15px;
+}
+
+.editor {
+    padding: 0;
+    margin: 0;
+    
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.segment-seperator-container {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.segment-seperator {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    height: 50%;
+    border-bottom: 2px solid #000;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.add-segment {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    top: 2.5px;
+    border: 1px solid white;
+    background: #222;
+    display: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.segment-seperator:hover {
+    border-bottom: 2px solid #FFF;
+    cursor: pointer;
+}
+
+.segment-seperator:hover>.add-segment {
+    display: inline-block;
+    margin: -12.5px;
+}
+
+.segment {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.segment-element-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+div.segment-container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+select.segment-version {
+    background: #DDD;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button.segment-reload {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: none;
+    background: #DDD;
+}
+
+button>img {
+    width: 20px;
+    position: relative;
+    top: 2px;
+    left: -4.5px;
+}
+
+button.segment-reload:hover {
+    background: #FFF;
+}
+
+.segment-img {
+    text-align: center;
+}
+
+.segment-img>img {
+    max-width: 100px;
+}
+
+.segment-text {
+    background: #333;
+    color: inherit;
+    font-family: inherit;
+    border: #000 solid 1px;
+    padding: 10px;
+    box-shadow: 2px 2px 0px #222 inset, -1px -1px 0px #444 inset;
+    resize: none;
+    overflow: auto;
+    display: block;
+    width: auto;
+    height: 100%;
+}
+
+.segment-img-container {
+    width: 20%;
+    display: inline-block;
+    max-width: max-content;
+}
+
+.segment-text-container {
+    flex-grow: 1;
+}
+
+.segment-audio-container {
+    display: inline-block;
+    max-width: max-content;
+}
+
+@keyframes rotate-animation {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .rotate-loop {
+    animation: rotate-animation 0.8s linear infinite;
+  }

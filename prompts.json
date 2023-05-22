@@ -1,0 +1,24 @@
+{
+    "script_prompt": "Generate a script for a short, 50 second pop science video. Only write the parts spoken out loud. Seperate every sentence with a new line. The script should start with the words \"Have you ever wondered [...]?\"\nDo not add any descriptors to the script, no title, no roles. Make sure all text within your response is to be spoken out loud. ABSOLUTELY DO _NOT_ LABEL THINGS LIKE NARRATOR, SPEAKER, MUSIC, OR CHARACTERS. ONLY WRITE THE WORDS THAT ARE MEANT TO BE SPOKEN OUT LOUD. \n\n",
+    "alterate_script_prompt": "Generate a short engaging pop science article. It should take about a minute to read out loud. Put every sentence on a new line. \n\n",
+    "regenerate_sentence": [
+        "Here is the entire script for context: \n",
+        "\n\nWith that script in mind, re-word or rephrase this sentence from the script: \n",
+        "\n\nOnly return the new rephrased sentence. Do not return the entire script."
+    ],
+    "generate_sentence_between": [
+        "Here is the entire script for context: \n",
+        "\n\nWith that script in mind, write a new sentence that will go between these two sentences: \n",
+        "<Your new sentence here>",
+        "\n\nOnly return the new sentence. Do not return the entire script."
+    ],
+    "generate_sentence_at_beginning": [
+        "Here is the entire script for context: \n",
+        "\n\nWith that script in mind, write a new sentence that will naturally go at the beginning of the script. \nOnly return the new sentence. Do not return the entire script."
+    ],
+    "generate_sentence_at_end": [
+        "Here is the entire script for context: \n",
+        "\n\nWith that script in mind, write a new sentence that will naturally go at the end of the script. \nOnly return the new sentence. Do not return the entire script."
+    ],
+    "get_image_description": "An image description is a short sentence that describes the content of an image. \nFor example: \"A large plant in winter conditions, cold, photograph\" \nor \"A person sneezing into a folded tissue, closeup, photograph\" \nor \"A diagram of a molecule, illustration, science\" \nIn the same style, describe IN 20 WORDS OR LESS an image to show during this sentence for a video essay: \n"
+}

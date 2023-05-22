@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thingy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="/eel.js"></script>
+</head>
+<body>
+    <div class="header">
+        <button id="generate">Generate!</button>
+        <span class="name-container">Name: <input type="text" name="name" id="name" placeholder="Project name"></span>
+        <button id="export">Export</button>
+
+    </div>
+    <div class="editor">
+        <div class="segment">
+            <div class="segment-img-container segment-element-container">
+                <div class="segment-container-header">
+                    <select name="segment-image-version" class="segment-version"> 
+                        <option value="1">V1</option>
+                    </select>
+                    <button class="segment-reload">
+                        <img src="reload_icon.svg" alt="reload" width="15px">
+                    </button>
+                </div>
+                <div class="segment-img">
+                    <img src="https://picsum.photos/128/128" alt="segment image" class="segment-img-src">
+                </div>
+            </div>
+
+            <div class="segment-text-container segment-element-container">
+                <div class="segment-container-header">
+                    <select name="segment-text-version" class="segment-version"> 
+                        <option value="1">V1</option>
+                    </select>
+                    <button class="segment-reload">
+                        <img src="reload_icon.svg" alt="reload" width="15px">
+                    </button>
+                </div>
+                <textarea class="segment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</textarea>
+            </div>
+
+            <div class="segment-audio-container segment-element-container">
+                <div class="segment-container-header">
+                    <select name="segment-audio-version" class="segment-version"> 
+                        <option value="1">V1</option>
+                    </select>
+                    <button class="segment-reload">
+                        <img src="reload_icon.svg" alt="reload" width="15px">
+                    </button>
+                </div>
+                <div class="segment-audio">
+                    <audio controls>
+                        <source src="" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+
+        <div class="segment-seperator-container">
+            <div class="segment-seperator">
+                <div class="add-segment">+</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
